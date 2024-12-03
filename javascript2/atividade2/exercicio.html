@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Verificação de múltiplos números:
+    let numerousuario = prompt('informe o primeiro numero')
+    let numerousuario2 = prompt('informe o segundo numero')
+    let numerousuario3 = prompt('informe o terceiro numero')
+    if (numerousuario > 0 && numerousuario2 > 0 && numerousuario3 > 0) {
+        alert("Os números sao positivos!");
+    } else {
+        alert("nem todos os números sao positivos");
+    }
+//Calculadora simples:
+let prinumero = prompt('digite o primeiro numero')
+let segnumero = prompt('digite o segumdo numero')
+let operacao = prompt('digite a operação')
+if(operacao === '+'){
+console.log("resultado:", prinumero + segnumero)
+}
+else if(operacao === "-"){
+    console.log("resultado:", prinumero - segnumero)
+}
+else if(operacao === "*"){
+    console.log("resultado:", prinumero * segnumero)
+}
+else if(operacao === "/"){
+    if(segnumero !==0){
+        console.log("resultado:", prinumero / segnumero)
+    }
+    else{
+        console.log("divisao por zero nao é permitido")
+    }
+}
+else{
+    console.log("operacao invalida")
+}
+
+//Desconto em compras:
+let number = prompt('digite um numero')
+if(number >= 50 && number <= 100){
+    alert('seu numero esta entre 50 e 100')
+}
+else(number < 50 && number > 100){
+    alert('senu numero nao esta entre 50 e 100')
+}
+</script>
+
+</html>
+
+
+
+

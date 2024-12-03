@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Exemplo 3: Par ou ímpar
+let numero = prompt("Digite um número:");
+
+if (numero % 2 === 0) {
+    alert("O número é par!");
+} else {
+    alert("O número é ímpar!");
+}
+//Exemplo 4: Adivinhe o número
+let numeroSecreto = 5;
+    let chute = prompt("Adivinhe o número (entre 1 e 10):");
+
+    if (chute == numeroSecreto) {
+        alert("Você acertou!");
+    } else {
+        alert("Você errou! O número era " + numeroSecreto);
+    }
+//Exemplo prático: Avaliação de notas
+let nota = Number(prompt("Digite sua nota (0 a 10):"));
+if (nota >= 9) {
+    alert("Excelente! Você tirou uma nota A.");
+} else if (nota >= 7) {
+    alert("Bom trabalho! Você tirou uma nota B.");
+} else if (nota >= 5) {
+    alert("Você tirou uma nota C. Pode melhorar.");
+} else {
+    alert("Nota insuficiente. Você tirou uma nota D.");
+}
+
+
+</script>
+</html>

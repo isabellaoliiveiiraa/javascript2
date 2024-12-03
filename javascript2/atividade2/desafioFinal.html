@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<SCript>
+    //Desafio Final: Sistema de Avaliação de Candidatos
+    let nome = prompt('Qual seu nome?');
+    let id = Number(prompt('Qual sua idade?'));
+    let prov = Number(prompt('Pontuação na Prova Técnica?'));
+    let entre = Number(prompt('Pontuação na Entrevista?'));
+    
+
+     if (id < 18) {
+        alert('Desculpe' + nome + 'você não atende aos critérios de idade');
+    } 
+    else if (prov < 7) {
+        alert('Infelizmente' + nome + 'sua pontuação na Prova Técnica foi insuficiente');
+    } 
+    else if (entre < 6) {
+        alert('Infelizmente' + nome + 'sua pontuação na Entrevista foi insuficiente');
+    }
+    else if ((prov+entre)/2 >= 8 ) {
+        alert('Você é Altamente Qualificado!');
+    }
+    else {
+        alert('Parabéns',  + nome + '!Você foi aprovado para a vaga');
+    }
+</SCript>
+</html>
